@@ -85,7 +85,7 @@
   width: 100%;
   border-top: unset;
   order: 2;
-  border-radius: 0 0 var(--radius) var(--radius);
+  border-radius: var(--radius) var(--radius) var(--radius) var(--radius);
 }
 
 /* Olie doesn't know how CSS inheritance works */
