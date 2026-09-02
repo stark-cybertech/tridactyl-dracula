@@ -1,17 +1,18 @@
 :root {
   /* Dracula Colors */
-  --bg: #282a36;
-  --currentline: #44475a;
+  --bg: #22212c;
+  --currentline: #454158;
   --fg: #f8f8f2;
-  --comment: #6272a4;
+  --comment: #7970a9;
   --cyan: #8be9fd;
   --green: #50fa7b;
-  --orange: #ffb86c;
-  --pink: #ff79c6;
-  --purple: #bd93f9;
+  --orange: #ffca80;
+  --pink: #ff80bf;
+  --purple: #9580ff;
   --red: #ff5555;
   --yellow: #f1fa8c;
-  --font: monospace; /*"FiraCode Nerd Font Mono";*/
+  --font: "MonaspiceNe NF"; /*"FiraCode Nerd Font Mono";*/
+  --radius: 8px;
 
   --tridactyl-fg: var(--fg);
   --tridactyl-bg: var(--bg);
@@ -42,6 +43,7 @@
   order: 1;
   border: 2px solid var(--purple);
   background: var(--tridactyl-bg);
+  border-radius: var(--radius) var(--radius) 0 0;
 }
 
 #tridactyl-input {
@@ -83,6 +85,7 @@
   width: 100%;
   border-top: unset;
   order: 2;
+  border-radius: 0 0 var(--radius) var(--radius);
 }
 
 /* Olie doesn't know how CSS inheritance works */
@@ -144,7 +147,9 @@
   left: 10% !important;
   z-index: 2147483647 !important;
   width: 80% !important;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px !important;
+  border-radius: var(--radius) !important;
+  overflow: hidden !important;
+  background: transparent !important;box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px !important;
 }
 
 .TridactylStatusIndicator {
@@ -156,6 +161,7 @@
   font-size: 12pt !important;
   /*font-weight: 200 !important;*/
   padding: 0.8ex !important;
+  border-radius: 0 var(--radius) 0 0 !important;
 }
 
 #completions .focused {
