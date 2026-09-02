@@ -161,7 +161,7 @@
   font-size: 12pt !important;
   /*font-weight: 200 !important;*/
   padding: 0.8ex !important;
-  border-radius: 0 var(--radius) 0 0 !important;
+  border-radius: var(--radius) var(--radius) 0 0 !important;
 }
 
 #completions .focused {
