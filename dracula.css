@@ -43,7 +43,7 @@
   order: 1;
   border: 2px solid var(--purple);
   background: var(--tridactyl-bg);
-  border-radius: var(--radius) var(--radius) 0 0;
+  border-radius: var(--radius) var(--radius) var(--radius) var(--radius);
 }
 
 #tridactyl-input {
@@ -161,7 +161,7 @@
   font-size: 12pt !important;
   /*font-weight: 200 !important;*/
   padding: 0.8ex !important;
-  border-radius: var(--radius) var(--radius) 0 0 !important;
+  border-radius: var(--radius) var(--radius) var(--radius) var(--radius) !important;
 }
 
 #completions .focused {
